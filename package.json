@@ -2,7 +2,7 @@
   "name": "airbnb_clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leokwo.github.io"
+  "homepage": "https://leokwo.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
