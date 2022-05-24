@@ -1,21 +1,29 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-//import { library } from '@fortawesome/fontawesome-svg-core'
-//import { faStar } from '@fortawesome/free-solid-svg-icons'
-//library.add(faStar)
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+library.add(faStar)
 
-export default function Card() {
+export default function Card({img, rating, ratingCount, location, experienceName, price, soldOut, online}) {
+  let badgeText
+  if (soldOut) {
+    badgeText = "SOLD OUT"
+  } else if (online) {
+    badgeText = "ONLINE"
+  }
+
   return (
     <div className="card">
-      <img src={require("../img/Pierre-Person.jpeg")} className="card--photo" />
+      {badgeText && <div className="badge">{badgeText}</div>}
+      <img src={img} className="card--photo" />
       <div className="card--stats">
         <FontAwesomeIcon icon="fa-solid fa-star" class="airRed" />
-        <span> 4.7 </span>
-        <span className="gray">(23)  </span>
-        <span className="gray">Pittsburgh, PA</span>
+        <span> {rating} </span>
+        <span className="gray">({ratingCount})  </span>
+        <span className="gray">{location}</span>
       </div>
-      <p>Life Lessons with abc</p>
-      <p><span className="bold">From $163</span> / person</p>
+      <p>{experienceName}</p>
+      <p><span className="bold">From ${price}</span> / person</p>
     </div>
   )
 }

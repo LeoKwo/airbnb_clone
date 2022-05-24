@@ -51,17 +51,42 @@ nav {
 }
 
 .card {
+  position: relative;
   width: 180px;
   font-size: 14px;
   margin: 20px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card--photo {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .card-stats {
   display: flex;
   align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 5px;
+  margin: 0;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #c0c0c0;
 }
