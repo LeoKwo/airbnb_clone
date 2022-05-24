@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad191d88.css",
+    "main.js": "/static/js/main.991187ab.js",
+    "static/js/787.9239aff2.chunk.js": "/static/js/787.9239aff2.chunk.js",
+    "static/media/Pierre-Person.jpeg": "/static/media/Pierre-Person.56582d11c14da6d0fa62.jpeg",
+    "static/media/heros.png": "/static/media/heros.6bb76f826b7f09242e3b.png",
+    "static/media/logo.png": "/static/media/logo.e4424517383d14a03a24.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.ad191d88.css.map": "/static/css/main.ad191d88.css.map",
+    "main.991187ab.js.map": "/static/js/main.991187ab.js.map",
+    "787.9239aff2.chunk.js.map": "/static/js/787.9239aff2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad191d88.css",
+    "static/js/main.991187ab.js"
+  ]
+}
