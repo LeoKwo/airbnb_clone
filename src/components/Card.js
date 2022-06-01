@@ -14,7 +14,7 @@ export default function Card({item}) {
 
   return (
     <div className="card">
-      {item.badgeText && <div className="badge">{item.badgeText}</div>}
+      {badgeText && <div className="badge">{badgeText}</div>}
       <img src={item.img} className="card--photo" />
       <div className="card--stats">
         <FontAwesomeIcon icon="fa-solid fa-star" class="airRed" />
