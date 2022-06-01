@@ -10,14 +10,15 @@ export default function App() {
     return (
       <Card
         key={item.id}
-        img={item.img}
-        rating={item.rating}
-        ratingCount={item.ratingCount}
-        location={item.location}
-        experienceName={item.experienceName}
-        price={item.price}
-        soldOut={item.soldOut}
-        online={item.online}
+        // img={item.img}
+        // rating={item.rating}
+        // ratingCount={item.ratingCount}
+        // location={item.location}
+        // experienceName={item.experienceName}
+        // price={item.price}
+        // soldOut={item.soldOut}
+        // online={item.online}
+        item={item}
       />
     )
   })
